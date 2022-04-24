@@ -1,0 +1,12 @@
+{
+  "extends": "./node_modules/@adonisjs/mrm-preset/_tsconfig",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "build",
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "build"]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "@shagital/adonisjs-acl",
+  "version": "1.0.1",
+  "description": "Role & Permission support for Adonisjs",
+  "scripts": {
+    "compile": "tsc",
+    "prebuild": "rimraf ./build",
+    "build": "npm run compile && npm run copyfiles",
+    "lint": "eslint --ignore-path .gitignore",
+    "format": "prettier \"**/*.ts\" --write --ignore-path .gitignore",
+    "prepublishOnly": "npm run build",
+    "copyfiles": "copyfiles src/config/* src/migrations/* src/models/* src/middlewares/* build"
+  },
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "keywords": [
+    "adonisjs",
+    "adonisjs5",
+    "role",
+    "permission",
+    "access",
+    "acl"
+  ],
+  "author": "Zacchaeus Bolaji <zacchaeus@shagital.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@adonisjs/auth": "^8.1.0"
+  },
+  "devDependencies": {
+    "@adonisjs/core": ">=5.0.0",
+    "@adonisjs/lucid": "^17.2.0",
+    "@adonisjs/mrm-preset": "^5.0.3",
+    "@types/node": "^14.14.28",
+    "copyfiles": "^2.4.1",
+    "eslint": "^7.20.0",
+    "eslint-plugin-adonis": "^1.2.1",
+    "eslint-plugin-vue": "^8.6.0",
+    "typescript": "^4.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shagital/adonisjs-acl.git"
+  },
+  "homepage": "https://github.com/Shagital/adonisjs-acl",
+  "publishConfig": {
+    "access": "public"
+  },
+  "adonisjs": {
+    "instructions": "./build/instructions.js",
+    "commands": []
+  }
+}
