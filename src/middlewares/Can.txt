@@ -42,20 +42,18 @@ export default class Can {
     rolePlaceHolder += placeholders.join(',')
     rolePlaceHolder += ')'
 
-    let {
-      0: {
-        0: { permissionCount },
-      },
+     const {
+      rows: [{ permissionCount }],
     } = await Database.rawQuery(
-      'SELECT count(`up`.`id`) as permissionCount FROM ' +
+      'SELECT count(up.id) as "permissionCount" FROM ' +
         userPermissionTable +
         ' up INNER JOIN ' +
         permissionTable +
-        ' p ON up.role_id=p.id WHERE `up.`user_id`=? AND `p`.`name` in ' +
+        ' p ON up.role_id=p.id WHERE up.user_id=? AND p.name in ' +
         rolePlaceHolder +
         ' LIMIT 1',
       [user.id, ...permissionNames]
-    )
+    );
 
     return permissionCount > 0
   }
