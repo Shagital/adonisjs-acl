@@ -42,20 +42,18 @@ export default class Is {
     rolePlaceHolder += placeholders.join(',')
     rolePlaceHolder += ')'
 
-    let {
-      0: {
-        0: { roleCount },
-      },
+   const {
+      rows: [{ roleCount }],
     } = await Database.rawQuery(
-      'SELECT count(`ur`.`id`) as roleCount FROM ' +
+      'SELECT count(ur.id) as "roleCount" FROM ' +
         userRoleTable +
         ' ur INNER JOIN ' +
         roleTable +
-        ' r ON ur.role_id=r.id WHERE `ur`.`user_id`=? AND `r`.`name` in ' +
+        ' r ON ur.role_id=r.id WHERE ur.user_id=? AND r.name in ' +
         rolePlaceHolder +
         ' LIMIT 1',
       [user.id, ...roleNames]
-    )
+    );
 
     return roleCount > 0
   }

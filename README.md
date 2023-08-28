@@ -1,7 +1,7 @@
 # AdonisJS ACL
-![npm](https://img.shields.io/npm/dt/@shagital/adonisjs-acl?style=plastic)
-![npm (scoped)](https://img.shields.io/npm/v/@shagital/adonisjs-acl)
-![NPM](https://img.shields.io/npm/l/@shagital/adonisjs-acl)
+![npm](https://img.shields.io/npm/dt/@steveyout/adonis5-acl?style=plastic)
+![npm (scoped)](https://img.shields.io/npm/v/@steveyout/adonis5-acl)
+![NPM](https://img.shields.io/npm/l/@steveyout/adonis5-acl)
 
 Version [for **Adonis v5**]
 
@@ -26,15 +26,15 @@ This package allows you easily add role/permission based access to your [AdonisJ
 
 You can install the package via NPM:
 ``` bash
-npm install @shagital/adonisjs-acl
+npm install @steveyout/adonis5-acl
 ```
 Or with yarn
 ``` bash
-yarn add @shagital/adonisjs-acl
+yarn add @steveyout/adonis5-acl
 ```
 
 ## Setup
-- Configure package with `node ace configure @shagital/adonisjs-acl`
+- Configure package with `node ace configure @steveyout/adonis5-acl`
 - In `start/kernel.ts`, add the following to `Server.middleware.registerNamed`:
 ```
 is: () => import('App/Middleware/Is'),
@@ -71,6 +71,7 @@ If you have a feature you'd like to add, kindly send a Pull Request (PR)
 If you discover any security related issues, please email [zacchaeus@shagital.com](mailto:zacchaeus@shagital.com) instead of using the issue tracker.
 
 ## Credits
+- [Steve Yout](https://github.com/steveyout)
 - [Zacchaeus Bolaji](https://github.com/djunehor)
 - [All Contributors](../../contributors)
 
