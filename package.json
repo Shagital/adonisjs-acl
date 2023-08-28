@@ -1,7 +1,7 @@
 {
-  "name": "@shagital/adonisjs-acl",
+  "name": "@steveyout/adonis5-acl",
   "version": "1.0.1",
-  "description": "Role & Permission support for Adonisjs",
+  "description": "Role & Permission support for Adonisjs v5",
   "scripts": {
     "compile": "tsc",
     "prebuild": "rimraf ./build",
