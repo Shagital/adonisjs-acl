@@ -71,6 +71,7 @@ If you have a feature you'd like to add, kindly send a Pull Request (PR)
 If you discover any security related issues, please email [zacchaeus@shagital.com](mailto:zacchaeus@shagital.com) instead of using the issue tracker.
 
 ## Credits
+- [Steve Yout](https://github.com/steveyout)
 - [Zacchaeus Bolaji](https://github.com/djunehor)
 - [All Contributors](../../contributors)
 
