@@ -1,6 +1,6 @@
 {
   "name": "@steveyout/adonis5-acl",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Role & Permission support for Adonisjs v5",
   "scripts": {
     "compile": "tsc",
@@ -24,7 +24,7 @@
     "access",
     "acl"
   ],
-  "author": "Zacchaeus Bolaji <zacchaeus@shagital.com>",
+  "author": "SteveYout <https://github.com/steveyout>",
   "license": "MIT",
   "dependencies": {
     "@adonisjs/auth": "^8.1.0"
@@ -42,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Shagital/adonisjs-acl.git"
+    "url": "git+https://github.com/steveyout/adonis5-acl.git"
   },
-  "homepage": "https://github.com/Shagital/adonisjs-acl",
+  "homepage": "https://github.com/steveyout/adonis5-acl",
   "publishConfig": {
     "access": "public"
   },
